@@ -33,8 +33,9 @@ const Footer: FC = () => {
       data-aos-offset="0"
     >
       <ul className="flex flex-col text-right md:flex-row gap-2 md:gap-3 w-fit mx-auto justify-center">
-        {socialLinks.map(({ img, name, link, title }) => (
+        {socialLinks.map(({ img, name, link, title }, idx) => (
           <li
+            key={idx}
             className="transition ease-in-out delay-100 border-2 md:pt-1 md:pb-2 pb-1 px-4 border-dashed border-transparent hover:border-sky-500/30 rounded"
             title={title}
           >

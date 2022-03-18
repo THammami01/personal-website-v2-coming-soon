@@ -55,7 +55,7 @@ const Main: FC = () => {
         data-aos-delay="700"
         data-aos-offset="0"
       >
-        <p>
+        <div>
           Hello, World!
           <ReactTypingEffect
             text={[""]}
@@ -68,7 +68,7 @@ const Main: FC = () => {
             alt="Hi"
             className="inline ml-1 w-8 -translate-y-1 rotate-8"
           />
-        </p>
+        </div>
 
         <p className="text-left mt-2 mx-auto text-sm">
           My name is{" "}
@@ -250,7 +250,7 @@ const Main: FC = () => {
         </a>
       </div>
 
-      <p>
+      <div>
         <a
           className="text-indigo-400 hover:underline underline-offset-2 cursor-pointer decoration-wavy decoration-2 decoration-indigo-400 max-w-32"
           href="mailto:thammami.me@gmail.com"
@@ -263,7 +263,7 @@ const Main: FC = () => {
           />
         </a>{" "}
         ^_^
-      </p>
+      </div>
 
       <div>
         <NotificationForm />

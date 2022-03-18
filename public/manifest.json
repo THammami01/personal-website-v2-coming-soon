@@ -1,0 +1,16 @@
+{
+  "name": "TH01's Portfolio",
+  "short_name": "TH01's Portfolio",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#141414",
+  "theme_color": "#141414"
+}
