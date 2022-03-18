@@ -1,28 +1,58 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@formspree/react': ^2.2.4
+  '@hookform/resolvers': ^2.8.8
+  '@iconify/react': ^3.2.0
+  '@react-pdf-viewer/core': 3.0.0
+  '@react-pdf-viewer/default-layout': 3.0.0
+  '@types/aos': ^3.0.4
+  '@types/node': ^17.0.21
   '@types/react': ^17.0.33
   '@types/react-dom': ^17.0.10
+  '@types/react-pdf': ^5.0.9
+  '@types/react-typing-effect': ^2.0.3
   '@vitejs/plugin-react': ^1.0.7
+  aos: ^2.3.4
   autoprefixer: ^10.4.2
   framer-motion: ^6.2.8
   node-sass: ^7.0.1
+  pdfjs-dist: ^2.12.313
   postcss: ^8.4.8
   react: ^17.0.2
   react-dom: ^17.0.2
+  react-hook-form: ^7.28.0
+  react-router-dom: '6'
+  react-typing-effect: ^2.0.5
   sass: ^1.49.9
   tailwindcss: ^3.0.23
   typescript: ^4.5.4
   vite: ^2.8.0
+  yup: ^0.32.11
 
 dependencies:
+  '@formspree/react': 2.2.4_react@17.0.2
+  '@hookform/resolvers': 2.8.8_react-hook-form@7.28.0
+  '@iconify/react': 3.2.0
+  '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+  '@react-pdf-viewer/default-layout': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+  aos: 2.3.4
   framer-motion: 6.2.8_react-dom@17.0.2+react@17.0.2
+  pdfjs-dist: 2.12.313
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-hook-form: 7.28.0_react@17.0.2
+  react-router-dom: 6.2.2_react-dom@17.0.2+react@17.0.2
+  react-typing-effect: 2.0.5
+  yup: 0.32.11
 
 devDependencies:
+  '@types/aos': 3.0.4
+  '@types/node': 17.0.21
   '@types/react': 17.0.39
   '@types/react-dom': 17.0.13
+  '@types/react-pdf': 5.0.9
+  '@types/react-typing-effect': 2.0.3
   '@vitejs/plugin-react': 1.2.0
   autoprefixer: 10.4.2_postcss@8.4.8
   node-sass: 7.0.1
@@ -267,6 +297,13 @@ packages:
       '@babel/types': 7.17.0
     dev: true
 
+  /@babel/runtime/7.17.7:
+    resolution: {integrity: sha512-L6rvG9GDxaLgFjg41K+5Yv9OMrU98sWe+Ykmc6FDJW/+vYZMhdOMKkISgzptMaERHvS2Y2lw9MDRm2gHhlQQoA==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.9
+    dev: false
+
   /@babel/template/7.16.7:
     resolution: {integrity: sha512-I8j/x8kHUrbYRTUxXrrMbfCa7jxkE7tZre39x3kjr9hvI82cK1FfqLygotcWN5kdPGWcLdWMHpSBavse5tWw3w==}
     engines: {node: '>=6.9.0'}
@@ -315,9 +352,42 @@ packages:
     dev: false
     optional: true
 
+  /@formspree/core/2.6.2:
+    resolution: {integrity: sha512-cbaNhWQ4BFZWosh1Oa4pKD3CWAK3sn+nK3D1UQj6hO1O+AUH502OabKo5+ugC/P2+d4YZLadIY3mC11Ig4kEzA==}
+    dependencies:
+      '@types/promise-polyfill': 6.0.4
+      fetch-ponyfill: 6.1.1
+      promise-polyfill: 8.2.3
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@formspree/react/2.2.4_react@17.0.2:
+    resolution: {integrity: sha512-eAtWpUB3udIC/7sdmZXMJM7Cr9whI0Ehc+cOPO2BwYWbWVbAd3rtWV91OtbINFzFCdzNK3TnN/xGGx3YOQAB0Q==}
+    peerDependencies:
+      react: '>= 16.8.0'
+    dependencies:
+      '@formspree/core': 2.6.2
+      react: 17.0.2
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@gar/promisify/1.1.3:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
+
+  /@hookform/resolvers/2.8.8_react-hook-form@7.28.0:
+    resolution: {integrity: sha512-meAEDur1IJBfKyTo9yPYAuzjIfrxA7m9Ov+1nxaW/YupsqMeseWifoUjWK03+hz/RJizsVQAaUjVxFEkyu0GWg==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+    dependencies:
+      react-hook-form: 7.28.0_react@17.0.2
+    dev: false
+
+  /@iconify/react/3.2.0:
+    resolution: {integrity: sha512-nHmPeBGn4KKS8DwDjGrZ9SLpoMmZ+dKZ53s2msBftg6srESMWBUOMW/XBMRjnUjzwQQchguVEhhh59LSSAia/g==}
+    dev: false
 
   /@jridgewell/resolve-uri/3.0.5:
     resolution: {integrity: sha512-VPeQ7+wH0itvQxnG+lIzWgkysKIr3L9sslimFW55rHMdGu/qCQ5z5h9zq4gI8uBtqkpHhsF4Z/OwExufUCThew==}
@@ -371,6 +441,255 @@ packages:
       rimraf: 3.0.2
     dev: true
 
+  /@react-pdf-viewer/attachment/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-cDFZK60IDOYK8Z+UV3rmRdxxW/kQ3Jd8G8eEtcn/oVXwg4oBjM+xw8t7KHOGCjWhwAWkgpeFJ7DdHUbziwGeHg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/bookmark/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-GZYcXnIQ6tlGgh4YDt+YJGM+ZuixcTHbN3ITXn3CtX6NUtS9N9Lf7GTKi+MAHBYlWLsiiovnVgJXPIja0o7quA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/core/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-Rx/FRlHkMb2PoY1oszsAEEWwYxlvSRKNYAS45no3sxG2toFgyEsxkcvyGApjtNlbPEQzo3pHKPIEpPazjXkpgQ==}
+    peerDependencies:
+      pdfjs-dist: ^2.6.347
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      pdfjs-dist: 2.12.313
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /@react-pdf-viewer/default-layout/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-mOYSP+1GAGPBXX+HkfeYwmluaLFK66+YBz65nIs0iqyauPY2BIQrFK/v4y7q4LJaU6l7TdNKihUIWiiilX9zVQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/attachment': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/bookmark': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/thumbnail': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/toolbar': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/full-screen/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-tlzlvo5kAqY88rq/0OFOTIpcWEr9+yNQA4kOwaYL6onjwuRgjou0YFzfFiBrU/ushAvRFaB7pE+4F430TrWYRw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/get-file/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-7H3ELryUh5WBXsKgkZWBlsZ7zfp5l+yVHBGp8d0+HLl1naGYDVJ1z18rlwtmqRETaZ93W3bmtyR7t3n6GqepfQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/open/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-WxcNGVYSpZVLHIrn+pBn6ZWtmT9iWdy6+zgkj/vmCoWrCnEAzogIHi+eiFZQ9Q+LPZa/YEBru835Z97j78jYtQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/page-navigation/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-1AWi8Lv5ugXvP2TRtflmtfmxyQIg/HYhPX2nTRLC+PW77GNzG4GeqrIWuITN10snOZOi6rI6UgGKz+iUvkYpVg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/print/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-cs8gaRya8yiHHtYullIMNBLGy49gueY5x8NFGQW575ROBH4qba+K4UTYC8br/ituNPwQRGVsp+u8GLRPNR8AxQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/properties/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-SZBpjE/UAdGY4joThFjO1z16iqlo6iPKivSP9jwb6VcNBoJTY3QPk+HQaW0UUJ5wfr88r8nyszKasKbOy4bzIg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/rotate/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-a54WMrCxbgfNur81o/YJ+L/s3bg9LLH+kmcpGRxlsAoWg1YCT08ksD+nTPNtldgEKbxfun/ruE/P01+A2DevtQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/scroll-mode/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-3gD6Ao757SeYoOvTmdE/8TPYUAFJnSdA01L8O48pIhZq4A6sQzmpYY5MrKBimIdSvSeTRQO4yE+3CXRQlFL/WA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/search/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-5pOAj5IOndVT9PJoEhOK7OB3KU/yI2vIlKLsHwp5hO8dSBUeYTx74U/y6ml+qJDJPCUj48SxiaLsu5t0ZeHGRg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/selection-mode/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-9beXJ4+uyJFKD9GMOv5FvD/1HAKoHoHPXmMNIC6pi9ZmQboO9T7R070pH6MN94jv76Ia4C3jJcuBQmGtMuhhsg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/theme/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-8PVtd7mM2inuUFqLDZjUOgFxWaa16SDY6MS+ByZdpaxTSahfBg9doRTwW85rzhbb93SkdhNYi96rqdNTI71vog==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/thumbnail/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-4ProUqQXkMf+nMhEiFZOgLsQ8Ha81H2Zkv8qOnxhrUep9r+Px+CaNbKspoGXul0RjKln2HWQU0Nkq99yde/wRg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/toolbar/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-ilaVldWz//9tarBc82phTFvxmx4vJ0xCzqTHqVwl2Ivvg9IVY5PHZKfoKanyxYVaOCr4Suo+pR+JKE69pY1Gug==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/full-screen': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/get-file': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/open': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/page-navigation': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/print': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/properties': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/rotate': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/scroll-mode': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/search': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/selection-mode': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/theme': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      '@react-pdf-viewer/zoom': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/zoom/3.0.0_bd306a1a01678c376aa08cce65f4c943:
+    resolution: {integrity: sha512-b+sf3GbpZDhZ5z1qFOmDyTVtCligRhQeLbQ2su403G6NRISUPTvb5NysIJP9cvI2gzNqJS+I7UVDf6xR2Cwlhg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    dependencies:
+      '@react-pdf-viewer/core': 3.0.0_bd306a1a01678c376aa08cce65f4c943
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
   /@rollup/pluginutils/4.2.0:
     resolution: {integrity: sha512-2WUyJNRkyH5p487pGnn4tWAsxhEFKN/pT8CMgHshd5H+IXkOnKvKZwsz5ZWz+YCXkleZRAU5kwbfgF8CPfDRqA==}
     engines: {node: '>= 8.0.0'}
@@ -384,8 +703,20 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
+  /@types/aos/3.0.4:
+    resolution: {integrity: sha512-mna6Jd6bdK1NpwarLopGvXOgUoCfj0470IwLxuVOFDElTGI0JTd7xSGQ0AjbAEnHErC/b3fA9t2uB3IXVKmckA==}
+    dev: true
+
+  /@types/lodash/4.14.180:
+    resolution: {integrity: sha512-XOKXa1KIxtNXgASAnwj7cnttJxS4fksBRywK/9LzRV5YxrF80BXZIGeQSuoESQ/VkUj30Ae0+YcuHc15wJCB2g==}
+    dev: false
+
   /@types/minimist/1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
+    dev: true
+
+  /@types/node/17.0.21:
+    resolution: {integrity: sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -396,12 +727,31 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
+  /@types/promise-polyfill/6.0.4:
+    resolution: {integrity: sha512-GSCjjH6mDS8jgpT22rEOkZVqZcYj7i9AHJu4ntpvoohEpa0mLAKP/Kz3POMKqABaFsS4TyNHOeoyWpzycddcoQ==}
+    dev: false
+
   /@types/prop-types/15.7.4:
     resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
     dev: true
 
   /@types/react-dom/17.0.13:
     resolution: {integrity: sha512-wEP+B8hzvy6ORDv1QBhcQia4j6ea4SFIBttHYpXKPFZRviBvknq0FRh3VrIxeXUmsPkwuXVZrVGG7KUVONmXCQ==}
+    dependencies:
+      '@types/react': 17.0.39
+    dev: true
+
+  /@types/react-pdf/5.0.9:
+    resolution: {integrity: sha512-sDK48DwAnha8nf74cavp1g1a8oCLI3F4hBQZm+DHZmgGYOnBm0UuAKwVu84cL2By0MkiCrGv0KSJDVSv+tN6KA==}
+    dependencies:
+      '@types/react': 17.0.39
+      pdfjs-dist: 2.12.313
+    transitivePeerDependencies:
+      - worker-loader
+    dev: true
+
+  /@types/react-typing-effect/2.0.3:
+    resolution: {integrity: sha512-H8DtQh/3DhyDzzO1wW8yd2oJvbaGY8lT9HN1qEYdQXqRx2+dObhC2GWl/6i5dPFZ+mVSVZ0DpNpi0/zSTrbxIw==}
     dependencies:
       '@types/react': 17.0.39
     dev: true
@@ -520,6 +870,14 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
     dev: true
+
+  /aos/2.3.4:
+    resolution: {integrity: sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==}
+    dependencies:
+      classlist-polyfill: 1.2.0
+      lodash.debounce: 4.0.8
+      lodash.throttle: 4.1.1
+    dev: false
 
   /aproba/2.0.0:
     resolution: {integrity: sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ==}
@@ -726,6 +1084,10 @@ packages:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
     dev: true
+
+  /classlist-polyfill/1.2.0:
+    resolution: {integrity: sha1-k1vC39lFiodrJ5YXUUY4vKqWSi4=}
+    dev: false
 
   /clean-stack/2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
@@ -1187,6 +1549,14 @@ packages:
       reusify: 1.0.4
     dev: true
 
+  /fetch-ponyfill/6.1.1:
+    resolution: {integrity: sha512-rWLgTr5A44/XhvCQPYj0X9Tc+cjUaHofSM4lcwjc9MavD5lkjIhJ+h8JQlavPlTIgDpwhuRozaIykBvX9ItaSA==}
+    dependencies:
+      node-fetch: 2.6.7
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /fill-range/7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
     engines: {node: '>=8'}
@@ -1419,6 +1789,12 @@ packages:
 
   /hey-listen/1.0.8:
     resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
+    dev: false
+
+  /history/5.3.0:
+    resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
+    dependencies:
+      '@babel/runtime': 7.17.7
     dev: false
 
   /hosted-git-info/2.8.9:
@@ -1657,9 +2033,20 @@ packages:
       p-locate: 4.1.0
     dev: true
 
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
+
+  /lodash.debounce/4.0.8:
+    resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}
+    dev: false
+
+  /lodash.throttle/4.1.1:
+    resolution: {integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=}
+    dev: false
+
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -1850,6 +2237,10 @@ packages:
     resolution: {integrity: sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==}
     dev: true
 
+  /nanoclone/0.2.1:
+    resolution: {integrity: sha512-wynEP02LmIbLpcYw8uBKpcfF6dmg2vcpKqxeH5UcoKEYdExslsdUA4ugFauuaeYdTB76ez6gJW8XAZ6CgkXYxA==}
+    dev: false
+
   /nanoid/3.3.1:
     resolution: {integrity: sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -1860,6 +2251,18 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
     dev: true
+
+  /node-fetch/2.6.7:
+    resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: false
 
   /node-gyp/8.4.1:
     resolution: {integrity: sha512-olTJRgUtAb/hOXG0E93wZDs5YiJlgbXxTwQAFHyNlRsXQnYzUaF2aGgujZbw+hR8aF4ZG/rST57bWMWD16jr9w==}
@@ -2051,6 +2454,14 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /pdfjs-dist/2.12.313:
+    resolution: {integrity: sha512-1x6iXO4Qnv6Eb+YFdN5JdUzt4pAkxSp3aLAYPX93eQCyg/m7QFzXVWJHJVtoW48CI8HCXju4dSkhQZwoheL5mA==}
+    peerDependencies:
+      worker-loader: ^3.0.8
+    peerDependenciesMeta:
+      worker-loader:
+        optional: true
+
   /performance-now/2.1.0:
     resolution: {integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=}
     dev: true
@@ -2135,6 +2546,10 @@ packages:
     resolution: {integrity: sha1-mEcocL8igTL8vdhoEputEsPAKeM=}
     dev: true
 
+  /promise-polyfill/8.2.3:
+    resolution: {integrity: sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==}
+    dev: false
+
   /promise-retry/2.0.1:
     resolution: {integrity: sha512-y+WKFlBR8BGXnsNlIHFGPZmyDf3DFMoLhaflAnyZgV6rG6xu+JwesTo2Q9R6XwYmtmwAFCkAk3e35jEdoeh/3g==}
     engines: {node: '>=10'}
@@ -2142,6 +2557,18 @@ packages:
       err-code: 2.0.3
       retry: 0.12.0
     dev: true
+
+  /prop-types/15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
+  /property-expr/2.0.5:
+    resolution: {integrity: sha512-IJUkICM5dP5znhCckHSv30Q4b5/JA5enCtkRHYaOVOAocnH/1BQEYTC5NMfT3AVl/iXKdr3aqQbQn9DxyWknwA==}
+    dev: false
 
   /psl/1.8.0:
     resolution: {integrity: sha512-RIdOzyoavK+hA18OGGWDqUTsCLhtA7IcZ/6NCs4fFJaHBDab+pDDmDIByWFRQJq2Cd7r1OoQxBGKOaztq+hjIQ==}
@@ -2171,6 +2598,18 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /react-dom/16.14.0_react@16.14.0:
+    resolution: {integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==}
+    peerDependencies:
+      react: ^16.14.0
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+      react: 16.14.0
+      scheduler: 0.19.1
+    dev: false
+
   /react-dom/17.0.2_react@17.0.2:
     resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
     peerDependencies:
@@ -2182,10 +2621,60 @@ packages:
       scheduler: 0.20.2
     dev: false
 
+  /react-hook-form/7.28.0_react@17.0.2:
+    resolution: {integrity: sha512-mmLpT86BkMGPr0r6ca8zxV0WH4Y1FW5MKs7Rq1+uHLVeeg5pSWbF5Z/qLCnM5vPVblHNM6lRBRRotnfEAf0ALA==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17
+    dependencies:
+      react: 17.0.2
+    dev: false
+
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
   /react-refresh/0.11.0:
     resolution: {integrity: sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /react-router-dom/6.2.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-AtYEsAST7bDD4dLSQHDnk/qxWLJdad5t1HFa1qJyUrCeGgEuCSw0VB/27ARbF9Fi/W5598ujvJOm3ujUCVzuYQ==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      history: 5.3.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-router: 6.2.2_react@17.0.2
+    dev: false
+
+  /react-router/6.2.2_react@17.0.2:
+    resolution: {integrity: sha512-/MbxyLzd7Q7amp4gDOGaYvXwhEojkJD5BtExkuKmj39VEE0m3l/zipf6h2WIB2jyAO0lI6NGETh4RDcktRm4AQ==}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      history: 5.3.0
+      react: 17.0.2
+    dev: false
+
+  /react-typing-effect/2.0.5:
+    resolution: {integrity: sha512-IyVHASfzkdsWYw+/gvh2g1lwMf/ctpWhQHgMZHXQinKWxW8529XDhLGd9KTfnK5yUPLPaucdtA9GZFjIOjKCVg==}
+    dependencies:
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+    dev: false
+
+  /react/16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+    dev: false
 
   /react/17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
@@ -2249,6 +2738,10 @@ packages:
       indent-string: 4.0.0
       strip-indent: 3.0.0
     dev: true
+
+  /regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: false
 
   /request/2.88.2:
     resolution: {integrity: sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==}
@@ -2359,6 +2852,13 @@ packages:
       immutable: 4.0.0
       source-map-js: 1.0.2
     dev: true
+
+  /scheduler/0.19.1:
+    resolution: {integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+    dev: false
 
   /scheduler/0.20.2:
     resolution: {integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==}
@@ -2620,6 +3120,10 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /toposort/2.0.2:
+    resolution: {integrity: sha1-riF2gXXRVZ1IvvNUILL0li8JwzA=}
+    dev: false
+
   /tough-cookie/2.5.0:
     resolution: {integrity: sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==}
     engines: {node: '>=0.8'}
@@ -2627,6 +3131,10 @@ packages:
       psl: 1.8.0
       punycode: 2.1.1
     dev: true
+
+  /tr46/0.0.3:
+    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    dev: false
 
   /trim-newlines/3.0.1:
     resolution: {integrity: sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==}
@@ -2743,6 +3251,17 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /webidl-conversions/3.0.1:
+    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    dev: false
+
+  /whatwg-url/5.0.0:
+    resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+    dev: false
+
   /which/2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
@@ -2811,3 +3330,16 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.0.1
     dev: true
+
+  /yup/0.32.11:
+    resolution: {integrity: sha512-Z2Fe1bn+eLstG8DRR6FTavGD+MeAwyfmouhHsIUgaADz8jvFKbO/fXc2trJKZg+5EBjh4gGm3iU/t3onKlXHIg==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@babel/runtime': 7.17.7
+      '@types/lodash': 4.14.180
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      nanoclone: 0.2.1
+      property-expr: 2.0.5
+      toposort: 2.0.2
+    dev: false
