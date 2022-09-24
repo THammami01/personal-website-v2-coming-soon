@@ -18,11 +18,17 @@ const socialLinks = [
     style: { marginRight: "11px" },
   },
   {
-    img: google,
+    img: (
+      <Icon
+        className="inline text-3xl w-5 h-5"
+        icon="logos:google-gmail"
+        style={{ marginRight: "10px", transform: 'translateY(-1px)' }}
+      />
+    ),
     name: "Email",
     link: "mailto:tarekhammamix01@gmail.com",
     title: "Send me an email",
-    style: { marginRight: "8px" },
+    isComponent: true,
   },
 ];
 
@@ -36,27 +42,33 @@ const Footer: FC = () => {
       data-aos-offset="0"
     >
       <ul className="flex flex-col text-right md:flex-row gap-2 md:gap-3 w-fit mx-auto justify-center">
-        {socialLinks.map(({ img, name, link, title, style }, idx) => (
-          <li
-            key={idx}
-            className="transition ease-in-out delay-100 border-2 md:pt-1 md:pb-2 pb-1 px-4 border-dashed border-transparent hover:border-sky-500/30 rounded"
-            title={title}
-          >
-            <img
-              src={img}
-              alt={title}
-              className="inline-block max-w-[20px] mr-3"
-              style={style || {}}
-            />
-            <a
-              href={link}
-              className="hover:underline underline-offset-2 cursor-pointer decoration-wavy decoration-2 decoration-sky-500"
-              target={link.startsWith("mailto") ? "" : "_blank"}
+        {socialLinks.map(
+          ({ img, name, link, title, style, isComponent }, idx) => (
+            <li
+              key={idx}
+              className="transition ease-in-out delay-100 border-2 md:pt-1 md:pb-2 pb-1 px-4 border-dashed border-transparent hover:border-sky-500/30 rounded"
+              title={title}
             >
-              {name}
-            </a>
-          </li>
-        ))}
+              {isComponent ? (
+                { ...img }
+              ) : (
+                <img
+                  src={img as string}
+                  alt={title}
+                  className="inline-block max-w-[20px] mr-3"
+                  style={style || {}}
+                />
+              )}
+              <a
+                href={link}
+                className="hover:underline underline-offset-2 cursor-pointer decoration-wavy decoration-2 decoration-sky-500"
+                target={link.startsWith("mailto") ? "" : "_blank"}
+              >
+                {name}
+              </a>
+            </li>
+          )
+        )}
       </ul>
 
       <div className="transition ease-in-out delay-100 mt-8 md:mt-6 text-center md:text-right w-fit mx-auto rounded border-2 border-dashed border-transparent hover:border-sky-500/30 w-fit mx-auto p-2 pb-3">
