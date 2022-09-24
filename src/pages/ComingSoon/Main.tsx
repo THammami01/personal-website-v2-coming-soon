@@ -49,7 +49,7 @@ const Main: FC = () => {
       </div>
 
       <div
-        className="transition ease-in-out delay-100 rounded border-2 border-dashed border-transparent hover:border-sky-500/30 p-2 pb-4 md:w-96 mx-auto"
+        className="transition ease-in-out delay-100 rounded border-2 border-dashed border-transparent hover:border-sky-500/30 p-2 pb-4 md:w-[420px] mx-auto"
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="700"
@@ -70,18 +70,29 @@ const Main: FC = () => {
           />
         </div>
 
-        <p className="text-left mt-2 mx-auto text-sm">
+        <p className="text-center mt-2 mx-auto text-sm">
           My name is{" "}
           <span className="underline decoration-2 decoration-sky-500/60 decoration-dashed underline-offset-4">
             Tarek Hammami
           </span>
           .
           <br />
-          I am passionate student developer,
+          I am a passionate developer and self-learner.
           <br />
-          I do freelance projects,
+          I do freelance projects.
           <br />
-          and I love competitive programming.
+          I like to compete with programmers,
+          <br />
+          contribute to open source,
+          <br />
+          and help people solve problems.
+          <br />
+          I'm currently preparing for multiple industry-recognized
+          certifications.
+          <br />
+          My dream is to work for tech giants,
+          <br />
+          be inventive and help advance human life.
         </p>
       </div>
 
@@ -131,6 +142,12 @@ const Main: FC = () => {
               icon="vscode-icons:file-type-jest"
             />
           </span>
+          <span title="Vite">
+            <Icon
+              className="inline text-3xl"
+              icon="vscode-icons:file-type-vite"
+            />
+          </span>
           <span title="Python">
             <Icon className="inline text-3xl" icon="logos:python" />
           </span>
@@ -155,9 +172,34 @@ const Main: FC = () => {
           <span title="GitHub Actions">
             <Icon className="inline text-3xl" icon="logos:github-actions" />
           </span>
+          <span title="Jenkins">
+            <Icon
+              className="inline text-3xl"
+              icon="vscode-icons:file-type-jenkins"
+            />
+          </span>
           <span title="Docker">
             <Icon className="inline text-3xl w-9" icon="logos:docker-icon" />
           </span>
+          <span title="AWS">
+            <Icon className="inline text-3xl w-9" icon="logos:aws" />
+          </span>
+          <span title="Azure">
+            <Icon
+              className="inline text-3xl w-9"
+              icon="vscode-icons:file-type-azure"
+            />
+          </span>
+          <span title="Google Cloud Platform">
+            <Icon className="inline text-3xl w-7" icon="logos:google-cloud" />
+          </span>
+          <span title="Firebase">
+            <Icon className="inline text-3xl w-6" icon="logos:firebase" />
+          </span>
+          <span title="Netlify">
+            <Icon className="inline text-3xl" icon="logos:netlify" />
+          </span>
+
           <span title="MySQL">
             <Icon
               className="inline text-3xl"
@@ -173,11 +215,8 @@ const Main: FC = () => {
           <span title="Redis">
             <Icon className="inline text-3xl w-8" icon="logos:redis" />
           </span>
-          <span title="Firebase">
-            <Icon className="inline text-3xl" icon="logos:firebase" />
-          </span>
-          <span title="Manjaro">
-            <Icon className="inline text-3xl w-6" icon="logos:manjaro" />
+          <span title="Ubuntu Server">
+            <Icon className="inline text-3xl w-6" icon="logos:ubuntu" />
           </span>
           <span title="VS Code">
             <Icon
@@ -197,7 +236,7 @@ const Main: FC = () => {
               icon="file-icons:adobe-photoshop"
             />
           </span>
-          <span title="Notion">
+          {/* <span title="Notion">
             <Icon className="inline text-3xl" icon="simple-icons:notion" />
           </span>
           <span title="Slack">
@@ -208,7 +247,7 @@ const Main: FC = () => {
               className="inline text-3xl text-[#0052CC]"
               icon="simple-icons:jirasoftware"
             />
-          </span>
+          </span> */}
         </div>
       </div>
 
@@ -243,7 +282,7 @@ const Main: FC = () => {
       >
         <a
           className="text-sky-300 hover:underline underline-offset-2 cursor-pointer decoration-wavy decoration-2 decoration-white"
-          href="https://drive.google.com/file/d/1vwyXZVxp5SYtZoxP8E9YF81xd80Jqpse/view?usp=sharing"
+          href="https://thammami01.github.io/CV"
           target="_blank"
         >
           My CV
@@ -253,7 +292,7 @@ const Main: FC = () => {
       <div>
         <a
           className="text-indigo-400 hover:underline underline-offset-2 cursor-pointer decoration-wavy decoration-2 decoration-indigo-400 max-w-32"
-          href="mailto:thammami.me@gmail.com"
+          href="mailto:tarekhammamix01@gmail.com?subject=Interested in joining our team?&body=Hi, Tarek. I have an offer for you."
         >
           <ReactTypingEffect
             text={["Would you like to hire me?"]}
